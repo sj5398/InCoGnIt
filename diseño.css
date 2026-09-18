@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #b0b0ff;
 }
 
 /* Estilos del Header */
@@ -15,11 +15,11 @@ header {
     width: 100%;
     height: 150px;
     overflow: hidden;
-    background-color: #a4adff;
+    background-color: #a1a1ff;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 3px solid #000;
+    border-bottom: 1px solid #000;
 }
 
 header img {
@@ -38,9 +38,9 @@ header img {
 /* Estilos del Menú Navegación (Izquierda) */
 nav {
     width: 20%;
-    background-color: #b1b9ff;
+    background-color: #a1a1ff;
     padding: 20px;
-    border-right: 3px solid #000;
+    border-right: 1px solid #000;
 }
 
 nav h2 {
@@ -72,7 +72,7 @@ nav ul li a:hover {
 /* Estilos del Contenido Principal (Centro) */
 main {
     width: 60%;
-    background-color: #eef0ff;
+    background-color: #ae00ff;
     padding: 20px;
 }
 
@@ -81,27 +81,31 @@ main h2 {
     font-size: 1.5rem;
 }
 
-/* Estilos de la Barra Lateral / Aside (Derecha) */
+/* Estilos de la Barra lateral / Aside (Derecha) */
 aside {
     width: 20%;
     background-color: #232324;
     padding: 20px;
     border-left: 3px solid #000;
-    color: #ffffff; /* Cambia todo el texto general dentro del aside a blanco */
+    color: #ffffff;
 }
 
 aside h2 {
     margin-top: 0;
     font-size: 1.5rem;
-    color: #ffffff; /* Asegura que el título H2 también sea blanco */
+    color: #ffffff;
+}
+
+aside p {
+    color: #ffffff;
 }
 
 /* Estilos del Pie de página (Footer) */
 footer {
     width: 100%;
     height: 100px;
-    background-color: #a4adff;
-    border-top: 3px solid #000;
+    background-color: #a1a1ff;
+    border-top: 1px solid #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,5 +113,5 @@ footer {
 
 footer h2 {
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
