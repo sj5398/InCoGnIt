@@ -4,37 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CICADA 3302</title>
-    <style>
-        /* Quita los márgenes blancos que los navegadores ponen por defecto */
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Configura el header y la imagen para ocupar todo el ancho */
-        header {
-            width: 100%;
-            height: 200px; /* Mantiene la altura de 150px que querías */
-            overflow: hidden; /* Evita que la imagen se salga del contenedor */
-        }
-
-        header img {
-            width: 100%; /* Ocupa todo el largo de la pantalla */
-            height: 100%; /* Mantiene los 150px de alto */
-            object-fit: cover; /* Ajusta la imagen para que no se deforme ni se estire feo */
-            display: block;
-        }
-    </style>
+    <!-- Vinculación al archivo CSS -->
+    <link rel="stylesheet" href="diseño.css">
 </head>
 <body>
 
+    <!-- Encabezado superior -->
     <header>
         <img src="unamed.png.jpg" alt="cigarra">
     </header>
 
-    <main>
-        En proceso de desarrollo. 1 Entrega oficial el lunes 21/09/26 ???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
-    </main>
+    <!-- Contenedor medio para NAV, CONTENT y ASIDE -->
+    <div class="main-container">
+        
+        <!-- Menú de navegación (NAV) -->
+        <nav>
+            <h2>NAV</h2>
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contenido principal (CONTENT) -->
+        <main>
+            <h2>CONTENT</h2>
+            <p>Aquí va todo el contenido principal de tu página web.</p>
+        </main>
+
+        <!-- Barra lateral (ASIDE) -->
+        <aside>
+            <h2>ASIDE</h2>
+            <p>Contenido secundario o publicidad.</p>
+        </aside>
+
+    </div>
+
+    <!-- Pie de página (FOOTER) -->
+    <footer>
+        <h2>FOOTER</h2>
+    </footer>
 
 </body>
 </html>
