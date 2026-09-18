@@ -84,14 +84,16 @@ main h2 {
 /* Estilos de la Barra Lateral / Aside (Derecha) */
 aside {
     width: 20%;
-    background-color: #b1b9ff;
+    background-color: #232324;
     padding: 20px;
     border-left: 3px solid #000;
+    color: #ffffff; /* Cambia todo el texto general dentro del aside a blanco */
 }
 
 aside h2 {
     margin-top: 0;
     font-size: 1.5rem;
+    color: #ffffff; /* Asegura que el título H2 también sea blanco */
 }
 
 /* Estilos del Pie de página (Footer) */
