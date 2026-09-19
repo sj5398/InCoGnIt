@@ -1,3 +1,4 @@
+/* Quita los márgenes blancos por defecto del navegador */
 * {
     box-sizing: border-box;
 }
@@ -6,18 +7,19 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #b0b0ff;
+    background-color: #f0f0f0;
 }
 
+/* Estilos del Header */
 header {
     width: 100%;
-    height: 200px;
+    height: 150px;
     overflow: hidden;
-    background-color: #a1a1ff;
+    background-color: #a4adff;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #000;
+    border-bottom: 3px solid #000;
 }
 
 header img {
@@ -27,16 +29,19 @@ header img {
     display: block;
 }
 
+/* Contenedor principal */
 .main-container {
     display: flex;
+    flex-direction: column; /* En celulares va en columna vertical */
     min-height: calc(100vh - 250px);
 }
 
+/* Estilos base (Móvil primero) */
 nav {
-    width: 20%;
-    background-color: #232324;
+    width: 100%;
+    background-color: #b1b9ff;
     padding: 20px;
-    border-right: 1px solid #000;
+    border-bottom: 3px solid #000;
 }
 
 nav h2 {
@@ -56,7 +61,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff !important;
+    color: #000;
     font-size: 1.1rem;
     font-weight: bold;
 }
@@ -66,9 +71,10 @@ nav ul li a:hover {
 }
 
 main {
-    width: 60%;
+    width: 100%;
     background-color: #080808;
     padding: 20px;
+    color: #ffffff; /* Para asegurar contraste con el fondo negro */
 }
 
 main h2 {
@@ -77,23 +83,26 @@ main h2 {
 }
 
 aside {
-    width: 20%;
-    background-color: #232324 !important;
+    width: 100%;
+    background-color: #232324;
     padding: 20px;
-    border-left: 3px solid #000;
-    color: #ffffff !important;
+    border-top: 3px solid #000;
+    color: #ffffff;
+    word-break: break-word; /* Evita que códigos/palabras largas se salgan */
 }
 
-aside h2, aside p {
+aside h2 {
     margin-top: 0;
-    color: #ffffff !important;
+    font-size: 1.5rem;
+    color: #ffffff;
 }
 
+/* Estilos del Pie de página (Footer) */
 footer {
     width: 100%;
     height: 100px;
-    background-color: #080808;
-    border-top: 1px solid #ffffff !important;
+    background-color: #a4adff;
+    border-top: 3px solid #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,5 +110,30 @@ footer {
 
 footer h2 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+}
+
+/* =========================================================
+   DISEÑO PARA PANTALLAS DE COMPUTADORA / TABLETS (768px+)
+   ========================================================= */
+@media (min-width: 768px) {
+    .main-container {
+        flex-direction: row; /* Vuelve a ponerse en fila horizontal */
+    }
+
+    nav {
+        width: 20%;
+        border-bottom: none;
+        border-right: 3px solid #000;
+    }
+
+    main {
+        width: 60%;
+    }
+
+    aside {
+        width: 20%;
+        border-top: none;
+        border-left: 3px solid #000;
+    }
 }
