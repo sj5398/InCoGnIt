@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #020111;
 }
 
 header img {
@@ -26,7 +26,7 @@ header img {
     object-fit: cover;
     display: block;
 }
-
+3
 .main-container {
     display: flex;
     min-height: calc(100vh - 250px);
@@ -37,7 +37,7 @@ nav {
     width: 20%;
     background-color: #1e1e1f !important;
     padding: 20px;
-    border-right: 1px solid #000;
+    border-right: 1px solid #020111;
     color: #ffffff !important;
 }
 
@@ -87,7 +87,7 @@ aside {
     width: 20%;
     background-color: #1e1e1f !important;
     padding: 20px;
-    border-left: 3px solid #000;
+    border-left: 3px solid #020111;
     color: #ffffff !important;
 }
 
@@ -100,7 +100,7 @@ footer {
     width: 100%;
     height: 100px;
     background-color: #1e1e1f;
-    border-top: 1px solid #000;
+    border-top: 1px solid #020111;
     display: flex;
     justify-content: center;
     align-items: center;
