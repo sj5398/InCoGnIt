@@ -1,4 +1,3 @@
-/* Quita los márgenes blancos por defecto del navegador */
 * {
     box-sizing: border-box;
 }
@@ -7,19 +6,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #000000;
 }
 
-/* Estilos del Header */
 header {
     width: 100%;
     height: 150px;
     overflow: hidden;
-    background-color: #a4adff;
+    background-color: #1e1e1f;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 3px solid #000;
+    border-bottom: 1px solid #000;
 }
 
 header img {
@@ -29,24 +27,24 @@ header img {
     display: block;
 }
 
-/* Contenedor principal */
 .main-container {
     display: flex;
-    flex-direction: column; /* En celulares va en columna vertical */
     min-height: calc(100vh - 250px);
 }
 
-/* Estilos base (Móvil primero) */
+/* Menú de Navegación (Izquierda) */
 nav {
-    width: 100%;
-    background-color: #b1b9ff;
+    width: 20%;
+    background-color: #1e1e1f !important;
     padding: 20px;
-    border-bottom: 3px solid #000;
+    border-right: 1px solid #000;
+    color: #ffffff !important;
 }
 
 nav h2 {
     margin-top: 0;
     font-size: 1.5rem;
+    color: #ffffff !important;
 }
 
 nav ul {
@@ -61,7 +59,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: #ffffff !important; /* Cambiado a blanco para que resalte sobre el fondo oscuro */
     font-size: 1.1rem;
     font-weight: bold;
 }
@@ -70,39 +68,39 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Contenido Principal (Centro) */
 main {
-    width: 100%;
-    background-color: #080808;
+    width: 60%;
+    background-color: #232324 !important;
     padding: 20px;
-    color: #ffffff; /* Para asegurar contraste con el fondo negro */
+    color: #ffffff !important;
 }
 
-main h2 {
+main h2, main p {
     margin-top: 0;
     font-size: 1.5rem;
+    color: #ffffff !important;
 }
 
+/* Barra Lateral (Derecha) */
 aside {
-    width: 100%;
-    background-color: #232324;
+    width: 20%;
+    background-color: #1e1e1f !important;
     padding: 20px;
-    border-top: 3px solid #000;
-    color: #ffffff;
-    word-break: break-word; /* Evita que códigos/palabras largas se salgan */
+    border-left: 3px solid #000;
+    color: #ffffff !important;
 }
 
-aside h2 {
+aside h2, aside p {
     margin-top: 0;
-    font-size: 1.5rem;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
-/* Estilos del Pie de página (Footer) */
 footer {
     width: 100%;
     height: 100px;
-    background-color: #a4adff;
-    border-top: 3px solid #000;
+    background-color: #1e1e1f;
+    border-top: 1px solid #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,30 +108,5 @@ footer {
 
 footer h2 {
     margin: 0;
-    font-size: 1.8rem;
-}
-
-/* =========================================================
-   DISEÑO PARA PANTALLAS DE COMPUTADORA / TABLETS (768px+)
-   ========================================================= */
-@media (min-width: 768px) {
-    .main-container {
-        flex-direction: row; /* Vuelve a ponerse en fila horizontal */
-    }
-
-    nav {
-        width: 20%;
-        border-bottom: none;
-        border-right: 3px solid #000;
-    }
-
-    main {
-        width: 60%;
-    }
-
-    aside {
-        width: 20%;
-        border-top: none;
-        border-left: 3px solid #000;
-    }
+    font-size: 1.5rem;
 }
