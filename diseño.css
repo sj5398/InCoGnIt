@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -32,7 +33,7 @@ header img {
     min-height: calc(100vh - 250px);
 }
 
-/* Menú de Navegación (Izquierda) */
+/* Menú de Navegación */
 nav {
     width: 20%;
     background-color: #1e1e1f !important;
@@ -69,7 +70,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Contenido Principal (Centro) */
+/* Contenido Principal */
 main {
     width: 60%;
     background-color: #232324 !important;
@@ -77,7 +78,6 @@ main {
     color: #ffffff !important;
 }
 
-/* Encabezados y subtítulos de MAIN */
 main .subtitulo {
     color: #888888;
     font-size: 0.95rem;
@@ -94,7 +94,7 @@ main h1 {
     margin-bottom: 15px;
 }
 
-/* Imagen Flotante estilo Wikipedia */
+/* Imagen destacada */
 .imagen-destacada {
     float: right;
     width: 220px;
@@ -113,7 +113,7 @@ main h1 {
     color: #ffffff !important;
 }
 
-/* Enlaces estilo Wikipedia */
+/* Enlaces */
 .articulo-contenido a {
     color: #6d9eeb;
     text-decoration: none;
@@ -123,14 +123,14 @@ main h1 {
     text-decoration: underline;
 }
 
-/* Limpieza del flotado (Clearfix) */
+/* Limpieza del flotado */
 .articulo-contenido::after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Barra Lateral (Derecha) */
+/* Barra Lateral */
 aside {
     width: 20%;
     background-color: #1e1e1f !important;
@@ -144,7 +144,7 @@ aside h2, aside p {
     color: #ffffff !important;
 }
 
-/* Pie de Página (Footer) */
+/* Pie de Página */
 footer {
     width: 100%;
     background-color: #1e1e1f;
@@ -175,6 +175,20 @@ footer {
     margin: 0;
     font-size: 0.85rem;
     color: #cccccc !important;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* LOGO B1N4RY */
+.logo-desarrollador {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 3px;
 }
 
 .footer-region {
